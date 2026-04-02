@@ -1,0 +1,64 @@
+\begin{table}[h]
+\centering
+\caption{Atmospheric neutrino event selection summary for 8 years of data taking}
+\label{tab:event_selection_summary}
+\begin{tabular}{lcccc}
+\hline\hline
+\textbf{Parameter} & \boldmath{$\nu_e$ CC} & \boldmath{$\nu_\mu$ CC} & \textbf{NC} & \textbf{Total} \\
+\hline
+\multicolumn{5}{l}{\textit{Expected Event Rates}} \\
+From flux $\times \sigma \times$ N $\times$ trigger & 2,748 & 2,642 & --- & 5,390 \\
+\hline
+\multicolumn{5}{l}{\textit{Simulated Events (before normalization)}} \\
+After NNBar trigger & 3,684 & 3,549 & 1,669 & 8,902 \\
+Normalization factor & 0.75 & 0.75 & --- & --- \\
+\hline
+\multicolumn{5}{l}{\textit{After Reconstruction Cuts (with normalization)}} \\
+Signal (no containment) & 209.2 & 1041.8 & --- & 1251.0 \\
+Signal (with containment) & 209.2 & 861.8 & --- & 1071.0 \\
+Containment acceptance & 100.0\% & 82.7\% & --- & --- \\
+NC contamination & 3.8 (1.8\%) & 32.2 (3.0\%) & --- & --- \\
+Efficiency (no containment) & 7.58\% & 39.14\% & --- & --- \\
+Efficiency (with containment) & 7.58\% & 32.38\% & --- & --- \\
+\hline
+\multicolumn{5}{l}{\textit{Cosmic Ray Background (8 years)}} \\
+No containment cut & 8.67e+03 & 1.05e+09 & --- & --- \\
+With containment cut & 6.35e+03 & 6.11e+06 & --- & --- \\
+Rejection factor & 1.4$\times$ & 172.1$\times$ & --- & --- \\
+\hline
+\multicolumn{5}{l}{\textit{Signal Purity}} \\
+No containment cut & 2.36\% & 0.00010\% & --- & --- \\
+With containment cut & 3.19\% & 0.0141\% & --- & --- \\
+Purity improvement & +0.83 pp & +0.014 pp & --- & --- \\
+\hline\hline
+\end{tabular}
+\end{table}
+\clearpage
+
+\begin{table}[h]
+\centering
+\caption{Detailed cut flow for atmospheric neutrino selection (with 0.75 normalization)}
+\label{tab:cut_flow}
+\begin{tabular}{lccc}
+\hline\hline
+\textbf{Cut Stage} & \textbf{Events} & \textbf{Step Eff.} & \textbf{Cumul. Eff.} \\
+\hline
+\multicolumn{4}{l}{\textbf{$\nu_\mu$ CC Selection}} \\
+True $\nu_\mu$ CC (after trigger) & 2662 & --- & 100.0\% \\
++ kHas1Prongs & 2612 & 98.1\% & 98.1\% \\
++ kNumuBasicQuality & 2486 & 95.2\% & 93.4\% \\
++ kNumuNCRej (RemID $>$ 0.75) & 1042 & 41.9\% & 39.1\% \\
++ Containment cut & 862 & 82.7\% & 32.4\% \\
+\hline
+\multicolumn{4}{l}{\textbf{$\nu_e$ CC Selection}} \\
+True $\nu_e$ CC (after trigger) & 2763 & --- & 100.0\% \\
++ kHas1Prongs & 2711 & 98.1\% & 98.1\% \\
++ kNue2024FDBasicQuality & 2386 & 88.0\% & 86.3\% \\
++ kModifiedNue2024CorePart & 1479 & 62.0\% & 53.5\% \\
++ kNue2024PID & 209 & 14.1\% & 7.6\% \\
++ Containment cut & 209 & 100.0\% & 7.6\% \\
+\hline\hline
+\end{tabular}
+\end{table}
+\clearpage
+
