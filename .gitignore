@@ -1,0 +1,17 @@
+*.root
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.log
+*.out
+*.err
+*.aux
+*.toc
+*.synctex.gz
+*.o
+*.so
+__pycache__/
+.vscode/
+build/
+tmp/
